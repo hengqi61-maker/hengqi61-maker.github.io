@@ -370,6 +370,11 @@ nav a:hover {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.project-demo {
+  border-color: rgba(185, 28, 43, 0.28);
+  background: linear-gradient(180deg, #fff, #fff7f8);
+}
+
 .plan-section {
   background: linear-gradient(180deg, rgba(238, 241, 246, 0.5), rgba(247, 248, 251, 0));
 }
@@ -583,6 +588,61 @@ dd.en {
   font-size: 13px;
 }
 
+.text-link {
+  display: inline-flex;
+  margin-right: 14px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.demo-section {
+  background: #0b111c;
+  color: white;
+}
+
+.demo-section .section-title p {
+  color: #76d6ff;
+}
+
+.demo-section .section-title span {
+  color: #b8c5d6;
+}
+
+.demo-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.demo-heading .button.secondary {
+  flex: 0 0 auto;
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.demo-frame-shell {
+  overflow: hidden;
+  border: 1px solid rgba(118, 214, 255, 0.35);
+  border-radius: 6px;
+  background: #050a12;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
+}
+
+.demo-frame-shell iframe {
+  display: block;
+  width: 100%;
+  height: min(72vh, 760px);
+  min-height: 560px;
+  border: 0;
+  background: #050a12;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 380px;
@@ -706,6 +766,14 @@ dd.en {
     display: block;
   }
 
+  .demo-heading {
+    display: block;
+  }
+
+  .demo-heading .button.secondary {
+    margin-bottom: 22px;
+  }
+
   .status-pill {
     margin-bottom: 22px;
   }
@@ -769,5 +837,10 @@ dd.en {
   .contact {
     margin: 0 20px 40px;
     padding: 26px;
+  }
+
+  .demo-frame-shell iframe {
+    height: 70vh;
+    min-height: 460px;
   }
 }

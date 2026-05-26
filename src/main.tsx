@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   BookOpen,
   Download,
+  ExternalLink,
   Github,
   GraduationCap,
   Mail,
@@ -56,6 +57,7 @@ function App() {
           <a href="#research">Research</a>
           <a href="#plan">Plan</a>
           <a href="#projects">Projects</a>
+          <a href="#em-demo">Demo</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -218,6 +220,38 @@ function App() {
           subtitle="Each project is presented by its problem, method, and evidence of capability."
         />
         <div className="project-grid">
+          <article className="project project-demo">
+            <div className="project-head">
+              <div>
+                <h3>em-polarization-demo</h3>
+                <p>偏振态交互演示 · 今日临时入口</p>
+              </div>
+              <a href="#em-demo" aria-label="Open polarization demo section">
+                <ArrowUpRight size={20} />
+              </a>
+            </div>
+            <div className="tags">
+              <span>Three.js</span>
+              <span>Electromagnetic wave</span>
+              <span>Polarization</span>
+            </div>
+            <dl>
+              <dt>演示对象 / Demo</dt>
+              <dd>电磁波沿 +z 传播时的 E、B 场关系，以及线偏振片对偏振态和强度的投影作用。</dd>
+              <dd className="en">
+                Interactive Maxwell plane-wave visualization with polarizer projection and intensity changes.
+              </dd>
+              <dt>打开方式 / Access</dt>
+              <dd>
+                <a className="text-link" href="#em-demo">
+                  页面内嵌交互演示
+                </a>
+                <a className="text-link" href="./em-polarization/" target="_blank" rel="noreferrer">
+                  独立打开
+                </a>
+              </dd>
+            </dl>
+          </article>
           {projects.map((project) => (
             <article className="project" key={project.title}>
               <div className="project-head">
@@ -247,6 +281,27 @@ function App() {
               </dl>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="section demo-section" id="em-demo">
+        <div className="demo-heading">
+          <SectionTitle
+            eyebrow="Interactive Demo"
+            title="偏振态交互演示"
+            subtitle="Temporary embedded demo for today: electromagnetic wave polarization, polarizer projection, and intensity attenuation."
+          />
+          <a className="button secondary" href="./em-polarization/" target="_blank" rel="noreferrer">
+            <ExternalLink size={18} />
+            独立打开演示
+          </a>
+        </div>
+        <div className="demo-frame-shell">
+          <iframe
+            title="EM Polarization 3D Visualizer"
+            src="./em-polarization/"
+            allow="fullscreen"
+          />
         </div>
       </section>
 
