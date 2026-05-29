@@ -142,23 +142,6 @@ export const targetMatrix = [
 
 export const projects = [
   {
-    title: "hydrogen-orbital",
-    subtitle: "氢原子轨道电子云可视化",
-    tech: ["React", "Three.js", "Quantum mechanics", "Vite"],
-    url: "https://github.com/hengqi61-maker/hydrogen-orbital",
-    problemZh: "氢原子量子数、径向节点、角向节点和概率密度分布的直观理解。",
-    problemEn:
-      "Visual interpretation of hydrogen quantum numbers, radial nodes, angular nodes, and probability density.",
-    methodZh:
-      "用氢原子径向函数和球谐函数采样电子云，并通过 Three.js 交互展示不同 n/l/m 态。",
-    methodEn:
-      "Samples electron-cloud points from hydrogen radial functions and spherical harmonics, then renders editable n/l/m states in Three.js.",
-    evidenceZh:
-      "体现量子力学公式实现、概率采样、三维渲染和教学型交互设计能力。",
-    evidenceEn:
-      "Evidence of quantum-mechanics implementation, probability sampling, 3D rendering, and educational interaction design.",
-  },
-  {
     title: "memory_engine",
     subtitle: "OpenClaw 类脑记忆引擎",
     tech: ["Python", "FAISS", "JSON storage", "pytest"],
