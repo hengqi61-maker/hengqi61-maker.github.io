@@ -57,6 +57,7 @@ function App() {
           <a href="#research">Research</a>
           <a href="#plan">Plan</a>
           <a href="#projects">Projects</a>
+          <a href="#hydrogen-demo">Orbital</a>
           <a href="#em-demo">Demo</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
@@ -252,6 +253,46 @@ function App() {
               </dd>
             </dl>
           </article>
+          <article className="project project-demo quantum-demo-card">
+            <div className="project-head">
+              <div>
+                <h3>hydrogen-orbital</h3>
+                <p>氢原子轨道电子云 · 新增交互演示</p>
+              </div>
+              <a href="#hydrogen-demo" aria-label="Open hydrogen orbital demo section">
+                <ArrowUpRight size={20} />
+              </a>
+            </div>
+            <div className="tags">
+              <span>React</span>
+              <span>Three.js</span>
+              <span>Quantum mechanics</span>
+            </div>
+            <dl>
+              <dt>演示对象 / Demo</dt>
+              <dd>通过 n、l、m 量子数生成氢原子轨道电子云，并显示径向节点、角向节点和概率密度分布。</dd>
+              <dd className="en">
+                Interactive hydrogen orbital electron-cloud visualization with editable quantum numbers and orbital metadata.
+              </dd>
+              <dt>打开方式 / Access</dt>
+              <dd>
+                <a className="text-link" href="#hydrogen-demo">
+                  页面内嵌交互演示
+                </a>
+                <a className="text-link" href="./hydrogen-orbital/" target="_blank" rel="noreferrer">
+                  独立打开
+                </a>
+                <a
+                  className="text-link"
+                  href="https://github.com/hengqi61-maker/hydrogen-orbital"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </dd>
+            </dl>
+          </article>
           {projects.map((project) => (
             <article className="project" key={project.title}>
               <div className="project-head">
@@ -281,6 +322,27 @@ function App() {
               </dl>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="section demo-section quantum-demo-section" id="hydrogen-demo">
+        <div className="demo-heading">
+          <SectionTitle
+            eyebrow="Interactive Demo"
+            title="氢原子轨道电子云可视化"
+            subtitle="Interactive hydrogen orbital visualizer: edit n, l, and m to inspect electron-cloud probability density, nodes, and orbital metadata."
+          />
+          <a className="button secondary" href="./hydrogen-orbital/" target="_blank" rel="noreferrer">
+            <ExternalLink size={18} />
+            独立打开演示
+          </a>
+        </div>
+        <div className="demo-frame-shell">
+          <iframe
+            title="Hydrogen Orbital Electron Cloud Visualizer"
+            src="./hydrogen-orbital/"
+            allow="fullscreen"
+          />
         </div>
       </section>
 

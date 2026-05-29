@@ -375,6 +375,11 @@ nav a:hover {
   background: linear-gradient(180deg, #fff, #fff7f8);
 }
 
+.quantum-demo-card {
+  border-color: rgba(37, 99, 235, 0.28);
+  background: linear-gradient(180deg, #fff, #f4f8ff);
+}
+
 .plan-section {
   background: linear-gradient(180deg, rgba(238, 241, 246, 0.5), rgba(247, 248, 251, 0));
 }
@@ -602,6 +607,10 @@ dd.en {
 .demo-section {
   background: #0b111c;
   color: white;
+}
+
+.quantum-demo-section {
+  background: #05070d;
 }
 
 .demo-section .section-title p {
