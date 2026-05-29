@@ -279,7 +279,7 @@ function App() {
                 <a className="text-link" href="#hydrogen-demo">
                   页面内嵌交互演示
                 </a>
-                <a className="text-link" href="./hydrogen-orbital/" target="_blank" rel="noreferrer">
+                <a className="text-link" href="./hydrogen-orbital-demo/" target="_blank" rel="noreferrer">
                   独立打开
                 </a>
                 <a
@@ -332,7 +332,7 @@ function App() {
             title="氢原子轨道电子云可视化"
             subtitle="Interactive hydrogen orbital visualizer: edit n, l, and m to inspect electron-cloud probability density, nodes, and orbital metadata."
           />
-          <a className="button secondary" href="./hydrogen-orbital/" target="_blank" rel="noreferrer">
+          <a className="button secondary" href="./hydrogen-orbital-demo/" target="_blank" rel="noreferrer">
             <ExternalLink size={18} />
             独立打开演示
           </a>
@@ -340,7 +340,7 @@ function App() {
         <div className="demo-frame-shell">
           <iframe
             title="Hydrogen Orbital Electron Cloud Visualizer"
-            src="./hydrogen-orbital/"
+            src="./hydrogen-orbital-demo/"
             allow="fullscreen"
           />
         </div>
