@@ -1,3 +1,7 @@
+import personalStatementContent from "../content/personal_statement.json";
+
+export const personalStatement = personalStatementContent;
+
 export const profile = {
   nameZh: "齐恒",
   nameEn: "Qi Heng",
@@ -5,16 +9,16 @@ export const profile = {
   schoolEn: "College of Physics, Donghua University",
   majorZh: "应用物理学（新能源与微电子）",
   majorEn: "Applied Physics, New Energy and Microelectronics Track",
-  directionZh: "计算物理模拟方向",
-  directionEn: "Computational Physics Simulation",
+  directionZh: "AI Agent · 计算物理 · AI for Science",
+  directionEn: "AI Agents · Computational Physics · AI for Science",
   email: "19836740005@163.com",
   github: "https://github.com/hengqi61-maker",
   githubLabel: "github.com/hengqi61-maker",
   cv: "./Qi_Heng_CV.pdf",
   statementPdf: "./Qi_Heng_Statement.pdf",
-  statementZh: "以物理学习为基础，主动用计算方法解决问题。",
+  statementZh: "把走向未知的探索欲，转化为可以计算、实现和验证的技术实践。",
   statementEn:
-    "I build from physics fundamentals and use computational methods to turn abstract problems into testable systems.",
+    "Turning curiosity about the unknown into computational, testable, and practical systems.",
 };
 
 export const metrics = [
@@ -25,18 +29,18 @@ export const metrics = [
 
 export const interests = [
   {
-    zh: "计算物理模拟",
-    en: "Computational physics simulation",
-    detailZh: "关注从物理模型、离散化方法到数值结果解释的完整链条。",
+    zh: "AI Agent 与科研工作流",
+    en: "AI agents and research workflows",
+    detailZh: "探索智能系统如何协助学习、文献理解、代码实验、知识管理和项目迭代。",
     detailEn:
-      "Model assumptions, discretization, numerical solving, and interpretation.",
+      "Intelligent systems for learning, literature, code experiments, knowledge management, and iteration.",
   },
   {
-    zh: "量子 / 凝聚态数值建模",
-    en: "Quantum and condensed-matter modeling",
-    detailZh: "希望继续训练量子体系和凝聚态相关问题的数值模拟能力。",
+    zh: "计算物理与数值模拟",
+    en: "Computational physics and simulation",
+    detailZh: "关注从物理问题理解、计算建模、程序实现到结果验证的完整链条。",
     detailEn:
-      "Numerical training for quantum systems and condensed-matter problems.",
+      "From physical questions and computational models to implementation and validation.",
   },
   {
     zh: "物理可视化",
@@ -46,11 +50,74 @@ export const interests = [
       "Turning lattices, reciprocal space, and probability fields into interpretable visuals.",
   },
   {
-    zh: "AI 工具辅助科研",
-    en: "AI-assisted research tools",
-    detailZh: "探索记忆、检索、信息压缩和 Agent 工作流如何支持科研效率。",
+    zh: "AI for Science 与量子系统",
+    en: "AI for Science and quantum systems",
+    detailZh: "希望结合 Transformer、AI Agent 与量子信息、量子系统模拟等物理问题。",
     detailEn:
-      "Exploring memory, retrieval, compression, and agent workflows for research productivity.",
+      "Connecting transformers and AI agents with quantum information and physical simulation.",
+  },
+];
+
+export const journeyPhotos = [
+  {
+    file: "travel-01.webp",
+    alt: "一名旅行者站在海边岩石上望向远处海面",
+    layout: "wide",
+  },
+  {
+    file: "travel-02.webp",
+    alt: "四位同行者在夜晚城市灯光前合影",
+    layout: "wide",
+  },
+  {
+    file: "travel-03.webp",
+    alt: "两位同行者在夜景前并肩合影",
+    layout: "standard",
+  },
+  {
+    file: "travel-04.webp",
+    alt: "透过室内落地窗看到海滩和海面",
+    layout: "standard",
+  },
+  {
+    file: "travel-05.webp",
+    alt: "一群同行者围坐餐桌分享旅途中的一餐",
+    layout: "wide",
+  },
+  {
+    file: "travel-06.webp",
+    alt: "穿橙色外套的旅行者面向雪山和林地",
+    layout: "standard",
+  },
+  {
+    file: "travel-07.webp",
+    alt: "徒步者站在高山湖泊前指向远处山峰",
+    layout: "feature",
+  },
+  {
+    file: "travel-08.webp",
+    alt: "背着徒步背包的旅行者站在层叠山峦前",
+    layout: "standard",
+  },
+  {
+    file: "travel-09.webp",
+    alt: "旅行者站在山间建筑与远景前",
+    layout: "standard",
+  },
+  {
+    file: "travel-10.webp",
+    alt: "阳光照亮远处连绵雪山",
+    layout: "wide",
+  },
+  {
+    file: "travel-11.webp",
+    alt: "蓝天下随风展开的户外布幡",
+    layout: "standard",
+  },
+  {
+    file: "travel-12.webp",
+    alt: "戴耳机的行人剪影与城市街道",
+    layout: "portrait",
   },
 ];
 
