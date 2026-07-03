@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   BookOpen,
   Camera,
+  CalendarDays,
   ExternalLink,
   FileText,
   Github,
@@ -23,6 +24,7 @@ import {
   metrics,
   profile,
   projects,
+  summerCamps,
   targetMatrix,
 } from "./data";
 
@@ -340,6 +342,49 @@ function GraduateMatrix() {
   );
 }
 
+function SummerCampSection() {
+  return (
+    <section className="section camp-section" id="camps">
+      <div className="plan-heading">
+        <SectionTitle eyebrow="Summer Camps" title={summerCamps.title} subtitle={summerCamps.subtitle} />
+        <span className="status-pill">Updated {summerCamps.updatedAt}</span>
+      </div>
+      <article className="camp-statement">
+        <CalendarDays size={26} />
+        <p>{summerCamps.statement}</p>
+      </article>
+      <div className="camp-table" role="table" aria-label="Summer camp admissions and attendance plan">
+        <div className="camp-row camp-head" role="row">
+          <span role="columnheader">学校 / 院系</span>
+          <span role="columnheader">活动</span>
+          <span role="columnheader">举办时间</span>
+          <span role="columnheader">当前状态</span>
+          <span role="columnheader">公开备注</span>
+        </div>
+        {summerCamps.rows.map((camp) => (
+          <article className="camp-row" role="row" key={`${camp.school}-${camp.program}`}>
+            <span role="cell" data-label="学校 / 院系">
+              {camp.school}
+            </span>
+            <span role="cell" data-label="活动">
+              {camp.program}
+            </span>
+            <span role="cell" data-label="举办时间">
+              {camp.time}
+            </span>
+            <span role="cell" data-label="当前状态">
+              <strong className={`camp-status ${camp.statusKey}`}>{camp.status}</strong>
+            </span>
+            <span role="cell" data-label="公开备注">
+              {camp.note}
+            </span>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function GraduatePlanSection() {
   return (
     <section className="section plan-section" id="plan">
@@ -402,6 +447,7 @@ function App() {
           <a href="#em-demo">EM Demo</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
+          <a href="#camps">Camps</a>
           <a href="#plan">Plan</a>
         </nav>
       </header>
@@ -486,6 +532,7 @@ function App() {
 
       <EducationBlock />
       <ContactBlock />
+      <SummerCampSection />
       <GraduatePlanSection />
     </main>
   );

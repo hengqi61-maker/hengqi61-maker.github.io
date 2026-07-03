@@ -122,7 +122,7 @@ export const journeyPhotos = [
 ];
 
 export const graduatePlan = {
-  updatedAt: "2026-05",
+  updatedAt: "2026-07",
   title: "保研匹配计划：双向选择下的研究训练目标",
   subtitle:
     "Graduate plan as a mutual-fit statement for research direction, working style, and mentoring expectations.",
@@ -141,6 +141,81 @@ export const graduatePlan = {
     "我目前更倾向计算、模拟、量子信息和交叉方向，暂不优先考虑材料导向过强或纯理论训练占比过高的课题。",
     "我希望硕士阶段完成系统科研训练，同时保留对产业、AI 工具和长期职业路径的开放探索。",
     "我会把已有的 Python 编程、数值模拟、文献整理和 AI workflow 能力转化为课题组中的有效辅助能力。",
+  ],
+};
+
+export const summerCamps = {
+  updatedAt: "2026-07",
+  title: "2026 夏令营参营情况",
+  subtitle:
+    "Current summer-camp admissions and attendance plan, kept concise for supervisors and reviewers.",
+  statement:
+    "我目前计划优先参加南方科技大学、西湖大学和厦门大学相关夏令营；其余已入营机会会及时、礼貌地沟通放弃，以避免占用名额。",
+  rows: [
+    {
+      school: "南方科技大学物理系",
+      program: "2026年优秀大学生夏季交流会",
+      time: "2026年7月3日-7月6日",
+      status: "计划参加",
+      statusKey: "attend",
+      note: "线下参会邀约，已作为当前高优先级交流机会推进。",
+    },
+    {
+      school: "北京师范大学系统科学学院",
+      program: "2026年优秀大学生夏令营",
+      time: "2026年7月7日-7月9日",
+      status: "已入营，拟婉拒",
+      statusKey: "decline",
+      note: "因时间与整体参营安排冲突，计划礼貌沟通放弃。",
+    },
+    {
+      school: "西湖大学理学院",
+      program: "2026年理学院夏令营",
+      time: "2026年7月9日-7月11日",
+      status: "计划参加",
+      statusKey: "attend",
+      note: "已获入营资格，作为当前高优先级机会准备参加。",
+    },
+    {
+      school: "中山大学物理学院",
+      program: "2026年全国优秀大学生夏令营",
+      time: "2026年7月9日-7月10日",
+      status: "已入营，拟婉拒",
+      statusKey: "decline",
+      note: "已确认入营；因与西湖大学安排重叠，计划礼貌沟通放弃。",
+    },
+    {
+      school: "西安交通大学物理学院",
+      program: "2026年夏令营",
+      time: "2026年7月11日-7月12日",
+      status: "已入营，拟婉拒",
+      statusKey: "decline",
+      note: "已确认入营；因当前优先参加南科大、西湖大学和厦门大学，计划放弃。",
+    },
+    {
+      school: "厦门大学物理科学与技术学院",
+      program: "2026年夏令营",
+      time: "2026年7月13日-7月15日",
+      status: "计划参加",
+      statusKey: "attend",
+      note: "已入营；举办时间依据学院报名指南，当前列为预期参加。",
+    },
+    {
+      school: "上海科技大学物质学院",
+      program: "2026年暑期学校（第二批）",
+      time: "2026年7月13日-7月17日",
+      status: "其他已获机会",
+      statusKey: "other",
+      note: "已通过入营审核，作为其他已获机会记录。",
+    },
+    {
+      school: "香港中文大学（深圳）理工学院 / AISE",
+      program: "2026卓越本科生夏令营",
+      time: "2026年7月13日-7月27日",
+      status: "其他已获 offer",
+      statusKey: "other",
+      note: "Course Track offer，作为其他已获机会记录。",
+    },
   ],
 };
 
