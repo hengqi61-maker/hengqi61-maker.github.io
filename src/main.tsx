@@ -5,6 +5,7 @@ import {
   BookOpen,
   Camera,
   CalendarDays,
+  Download,
   ExternalLink,
   FileText,
   Github,
@@ -95,6 +96,10 @@ function HeroActions({
           查看个人简述
         </a>
       )}
+      <a className="button primary" href={profile.interviewDeck} download>
+        <Download size={18} />
+        下载面试 PPT
+      </a>
       <a className="button secondary" href={profile.github} target="_blank" rel="noreferrer">
         <Github size={18} />
         GitHub

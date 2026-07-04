@@ -16,6 +16,7 @@ export const profile = {
   githubLabel: "github.com/hengqi61-maker",
   cv: "./Qi_Heng_CV.pdf",
   statementPdf: "./Qi_Heng_Statement.pdf",
+  interviewDeck: "./materials/Qi_Heng_Interview_Presentation.pptx",
   statementZh: "把走向未知的探索欲，转化为可以计算、实现和验证的技术实践。",
   statementEn:
     "Turning curiosity about the unknown into computational, testable, and practical systems.",

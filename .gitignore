@@ -18,6 +18,8 @@ id card*.jpg
 *保研材料合并版*
 *.pptx
 *.ppt
+!public/materials/
+!public/materials/Qi_Heng_Interview_Presentation.pptx
 
 # Keep only explicitly sanitized public CV files under public/
 !public/Qi_Heng_CV.pdf

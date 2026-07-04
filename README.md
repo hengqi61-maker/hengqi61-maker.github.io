@@ -36,5 +36,6 @@ The PDF script uses `/Library/Fonts/Arial Unicode.ttf` by default. Set
 ## Privacy
 
 Only sanitized public materials should be committed. Do not add ID cards,
-student certificates, transcripts, full application packets, or PPT source
-files to this repository.
+student certificates, transcripts, full application packets, or unpublished
+PPT source files to this repository. Interview decks may be added only when
+they are intentionally published.
