@@ -122,92 +122,77 @@ export const journeyPhotos = [
   },
 ];
 
-export const graduatePlan = {
-  updatedAt: "2026-07",
-  title: "保研匹配计划：双向选择下的研究训练目标",
-  subtitle:
-    "Graduate plan as a mutual-fit statement for research direction, working style, and mentoring expectations.",
-  statement:
-    "我公开当前选择逻辑，是为了让导师和我都能更早判断研究兴趣、工作方式和培养预期是否匹配。申请选择仍处于动态评估阶段；若意向发生变化，我会尽早、透明地沟通。",
-  directions: ["量子计算", "计算物理 / 统计物理", "交叉学科", "AI 辅助科研工具"],
-  criteria: [
-    "研究兴趣契合度",
-    "课题自由度",
-    "地域与平台",
-    "补贴 / 培养条件",
-    "导师接纳概率",
-    "长期发展空间",
-  ],
-  summary: [
-    "我目前更倾向计算、模拟、量子信息和交叉方向，暂不优先考虑材料导向过强或纯理论训练占比过高的课题。",
-    "我希望硕士阶段完成系统科研训练，同时保留对产业、AI 工具和长期职业路径的开放探索。",
-    "我会把已有的 Python 编程、数值模拟、文献整理和 AI workflow 能力转化为课题组中的有效辅助能力。",
-  ],
-};
-
 export const summerCamps = {
-  updatedAt: "2026-07",
+  updatedAt: "2026-07-07",
   title: "2026 夏令营参营情况",
   subtitle:
     "Current summer-camp admissions and attendance plan, kept concise for supervisors and reviewers.",
   statement:
-    "我目前计划优先参加南方科技大学、西湖大学和厦门大学相关夏令营；其余已入营机会会及时、礼貌地沟通放弃，以避免占用名额。",
+    "南方科技大学交流已结束；我接下来重点准备西湖大学理学院和上海科技大学物质科学与技术学院相关交流。其他机会会根据入营结果、时间冲突和研究匹配度及时调整。",
   rows: [
     {
       school: "南方科技大学物理系",
       program: "2026年优秀大学生夏季交流会",
       time: "2026年7月3日-7月6日",
-      status: "计划参加",
-      statusKey: "attend",
-      note: "线下参会邀约，已作为当前高优先级交流机会推进。",
+      status: "已结束",
+      statusKey: "done",
+      note: "已完成线下交流，后续根据导师沟通和匹配度继续评估。",
+    },
+    {
+      school: "北京理工大学物理学院",
+      program: "2026年全国优秀大学生夏令营",
+      time: "2026年7月3日-7月5日",
+      status: "已结束，未参加",
+      statusKey: "inactive",
+      note: "入营机会已记录；活动已结束，后续不作为准备事项推进。",
     },
     {
       school: "北京师范大学系统科学学院",
       program: "2026年优秀大学生夏令营",
       time: "2026年7月7日-7月9日",
-      status: "已入营，拟婉拒",
-      statusKey: "decline",
-      note: "因时间与整体参营安排冲突，计划礼貌沟通放弃。",
+      status: "不再推进",
+      statusKey: "inactive",
+      note: "因时间与整体参营安排冲突，已不作为当前准备事项推进。",
     },
     {
-      school: "西湖大学理学院",
+      school: "西湖大学理学院物理系",
       program: "2026年理学院夏令营",
       time: "2026年7月9日-7月11日",
-      status: "计划参加",
-      statusKey: "attend",
-      note: "已获入营资格，作为当前高优先级机会准备参加。",
+      status: "重点准备",
+      statusKey: "upcoming",
+      note: "已获入营资格，当前作为下一阶段重点准备对象。",
     },
     {
       school: "中山大学物理学院",
       program: "2026年全国优秀大学生夏令营",
       time: "2026年7月9日-7月10日",
-      status: "已入营，拟婉拒",
-      statusKey: "decline",
-      note: "已确认入营；因与西湖大学安排重叠，计划礼貌沟通放弃。",
+      status: "不再推进",
+      statusKey: "inactive",
+      note: "已确认入营；因与西湖大学安排重叠，后续不作为当前准备事项推进。",
     },
     {
       school: "西安交通大学物理学院",
       program: "2026年夏令营",
       time: "2026年7月11日-7月12日",
-      status: "已入营，拟婉拒",
-      statusKey: "decline",
-      note: "已确认入营；因当前优先参加南科大、西湖大学和厦门大学，计划放弃。",
+      status: "不再推进",
+      statusKey: "inactive",
+      note: "已确认入营；因当前优先准备西湖大学和上海科技大学，后续不作为重点推进。",
     },
     {
       school: "厦门大学物理科学与技术学院",
       program: "2026年夏令营",
       time: "2026年7月13日-7月15日",
-      status: "计划参加",
-      statusKey: "attend",
-      note: "已入营；举办时间依据学院报名指南，当前列为预期参加。",
+      status: "待确认",
+      statusKey: "pending",
+      note: "官网说明入选营员预计2026年7月5日前邮件通知，未入选者不另行通知；当前按疑似未入营处理，待邮箱和报名系统复核。",
     },
     {
-      school: "上海科技大学物质学院",
+      school: "上海科技大学物质科学与技术学院",
       program: "2026年暑期学校（第二批）",
       time: "2026年7月13日-7月17日",
-      status: "其他已获机会",
-      statusKey: "other",
-      note: "已通过入营审核，作为其他已获机会记录。",
+      status: "重点准备",
+      statusKey: "upcoming",
+      note: "第二批短期班时间为2026年7月13日至7月17日；当前列为下一阶段重点准备对象。",
     },
     {
       school: "香港中文大学（深圳）理工学院 / AISE",
@@ -219,69 +204,6 @@ export const summerCamps = {
     },
   ],
 };
-
-export const targetMatrix = [
-  {
-    school: "同济大学",
-    mentors: "龙洋 / 严刚 / 王策",
-    order: "龙洋 1 · 严刚 2 · 王策 3",
-    priority: "B",
-    difficulty: "A",
-    rationale:
-      "作为重点比较对象，主要关注量子、计算与交叉方向的匹配度，以及进入课题后是否能承担数值模拟或机器学习相关任务。",
-    note: "同校内按当前兴趣和接纳概率综合排序。",
-  },
-  {
-    school: "南方科技大学",
-    mentors: "夏秀杨 / 钟有鹏",
-    order: "夏秀杨 1 · 钟有鹏 2",
-    priority: "A",
-    difficulty: "B",
-    rationale:
-      "地域、平台活力和交叉研究氛围对我吸引较强，适合作为量子计算、计算物理和 AI 工具能力继续结合的高优先级选择。",
-    note: "若培养方式和方向匹配，将积极推进沟通。",
-  },
-  {
-    school: "上海科技大学",
-    mentors: "王涵 / 孙兆茹",
-    order: "王涵 1 · 孙兆茹 2",
-    priority: "C",
-    difficulty: "C",
-    rationale:
-      "作为阶段性观察对象，关注具体课题是否能落到计算建模、数值模拟或可验证系统实现上。",
-    note: "当前优先级低于南科大和人大方向。",
-  },
-  {
-    school: "中国人民大学",
-    mentors: "王雷",
-    order: "王雷 1",
-    priority: "B",
-    difficulty: "B",
-    rationale:
-      "与神经网络、机器学习和计算物理交叉方向契合度较高，符合我希望在研究生阶段继续训练数值建模和 AI 辅助科研能力的目标。",
-    note: "重点关注研究问题、训练强度和个人能力差距。",
-  },
-  {
-    school: "深圳国际量子研究院",
-    mentors: "暂未选择",
-    order: "暂未纳入优先名单",
-    priority: "观察",
-    difficulty: "待评估",
-    rationale:
-      "目前尚未形成明确导师匹配判断，暂作为量子方向相关平台持续观察。",
-    note: "阶段性匹配判断，后续可能调整。",
-  },
-  {
-    school: "西湖大学",
-    mentors: "待具体匹配",
-    order: "高优先级机会",
-    priority: "S",
-    difficulty: "S",
-    rationale:
-      "若获得合适机会，并且研究方向、培养方式和自由度匹配，将作为高优先级选择。",
-    note: "录取难度和个人能力差距均需谨慎评估。",
-  },
-];
 
 export const projects = [
   {

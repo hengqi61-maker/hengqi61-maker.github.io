@@ -14,19 +14,16 @@ import {
   Microscope,
   Network,
   Sigma,
-  Target,
 } from "lucide-react";
 import "./styles.css";
 import {
   education,
-  graduatePlan,
   honors,
   interests,
   metrics,
   profile,
   projects,
   summerCamps,
-  targetMatrix,
 } from "./data";
 
 const iconMap = [Sigma, Microscope, Network, BookOpen];
@@ -99,6 +96,10 @@ function HeroActions({
       <a className="button primary" href={profile.interviewDeck} download>
         <Download size={18} />
         下载面试 PPT
+      </a>
+      <a className="button secondary" href="#camps">
+        <CalendarDays size={18} />
+        夏令营入营情况
       </a>
       <a className="button secondary" href={profile.github} target="_blank" rel="noreferrer">
         <Github size={18} />
@@ -309,48 +310,10 @@ function ContactBlock() {
   );
 }
 
-function GraduateMatrix() {
-  return (
-    <div className="matrix-table" role="table" aria-label="Graduate target matching matrix">
-      <div className="matrix-row matrix-head" role="row">
-        <span role="columnheader">学校 / 平台</span>
-        <span role="columnheader">导师</span>
-        <span role="columnheader">排序</span>
-        <span role="columnheader">优先级</span>
-        <span role="columnheader">难度</span>
-        <span role="columnheader">匹配理由与备注</span>
-      </div>
-      {targetMatrix.map((target) => (
-        <article className="matrix-row" role="row" key={target.school}>
-          <span role="cell" data-label="学校 / 平台">
-            {target.school}
-          </span>
-          <span role="cell" data-label="导师">
-            {target.mentors}
-          </span>
-          <span role="cell" data-label="排序">
-            {target.order}
-          </span>
-          <span role="cell" data-label="优先级">
-            <strong>{target.priority}</strong>
-          </span>
-          <span role="cell" data-label="难度">
-            <strong>{target.difficulty}</strong>
-          </span>
-          <span role="cell" data-label="匹配理由与备注">
-            {target.rationale}
-            <em>{target.note}</em>
-          </span>
-        </article>
-      ))}
-    </div>
-  );
-}
-
 function SummerCampSection() {
   return (
     <section className="section camp-section" id="camps">
-      <div className="plan-heading">
+      <div className="status-heading">
         <SectionTitle eyebrow="Summer Camps" title={summerCamps.title} subtitle={summerCamps.subtitle} />
         <span className="status-pill">Updated {summerCamps.updatedAt}</span>
       </div>
@@ -390,53 +353,6 @@ function SummerCampSection() {
   );
 }
 
-function GraduatePlanSection() {
-  return (
-    <section className="section plan-section" id="plan">
-      <div className="plan-heading">
-        <SectionTitle eyebrow="Graduate Plan" title={graduatePlan.title} subtitle={graduatePlan.subtitle} />
-        <span className="status-pill">Updated {graduatePlan.updatedAt}</span>
-      </div>
-      <div className="plan-intro">
-        <article className="plan-statement">
-          <Target size={26} />
-          <p>{graduatePlan.statement}</p>
-          <div className="action-row compact">
-            <a className="button primary" href={profile.statementPdf} target="_blank" rel="noreferrer">
-              <FileText size={18} />
-              查看个人简述
-            </a>
-          </div>
-        </article>
-        <div className="plan-lists">
-          <div>
-            <h3>方向偏好</h3>
-            <div className="tags">
-              {graduatePlan.directions.map((direction) => (
-                <span key={direction}>{direction}</span>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h3>匹配标准</h3>
-            <div className="tags">
-              {graduatePlan.criteria.map((criterion) => (
-                <span key={criterion}>{criterion}</span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="statement-summary" aria-label="Statement summary">
-        {graduatePlan.summary.map((item) => (
-          <p key={item}>{item}</p>
-        ))}
-      </div>
-      <GraduateMatrix />
-    </section>
-  );
-}
-
 function App() {
   return (
     <main>
@@ -453,7 +369,6 @@ function App() {
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
           <a href="#camps">Camps</a>
-          <a href="#plan">Plan</a>
         </nav>
       </header>
 
@@ -538,7 +453,6 @@ function App() {
       <EducationBlock />
       <ContactBlock />
       <SummerCampSection />
-      <GraduatePlanSection />
     </main>
   );
 }
