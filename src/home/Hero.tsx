@@ -6,6 +6,7 @@ import {
   Download,
   FileText,
   Github,
+  GraduationCap,
 } from "lucide-react";
 import { metrics, profile } from "../data";
 import {
@@ -239,6 +240,10 @@ function HeroActions({ reducedMotion }: { reducedMotion: boolean }) {
         <a className="quick-link" href={profile.statementPdf} target="_blank" rel="noreferrer">
           <FileText size={16} />
           查看个人简述
+        </a>
+        <a className="quick-link" href={profile.transcript} target="_blank" rel="noreferrer">
+          <GraduationCap size={16} />
+          查看成绩单
         </a>
         <a className="quick-link" href="#camps">
           <CalendarDays size={16} />
